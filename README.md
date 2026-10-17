@@ -25,3 +25,7 @@ These notebooks are organised from an existing Colab archive. The table identifi
 CSV text-processing checks and the NumPy character-reconstruction run passed on small local inputs.
 
 [Browse all AI, ML and automation topics](https://github.com/captof-omuamua/Colab-AI-ML-Projects).
+
+## Airline sentiment project
+
+The [consolidated project guide](projects/airline-sentiment/README.md) brings the semester archive into this collection. Use [24_airline_sentiment_lstm.ipynb](24_airline_sentiment_lstm.ipynb) as the reviewed version; the earlier semester variant is preserved separately. Tweets.csv remains excluded because it contains user/location metadata.
