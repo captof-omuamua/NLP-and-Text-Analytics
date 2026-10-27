@@ -1,12 +1,10 @@
 # Airline Sentiment Classification
 
-### LSTM text classification for positive, neutral, and negative airline tweets.
+### LSTM text classification for positive, neutral and negative airline tweets.
 
 **Python · Keras/TensorFlow · LSTM · NLP**
 
-*Archived coursework / research prototype · Not actively maintained*
-
-An archived notebook exploring airline-tweet sentiment classification with sequence models. It tokenizes text, pads sequences, and trains a neural classifier for three sentiment labels.
+Classifies airline tweets as positive, neutral or negative. The notebook tokenizes the text, pads the sequences, and trains an embedding plus LSTM classifier for the three labels.
 
 ## What is included
 
@@ -14,9 +12,7 @@ An archived notebook exploring airline-tweet sentiment classification with seque
 - Embedding and LSTM-based classification
 - Single-text prediction helper
 
-The repository includes 1 directly browsable source/notebook file and a [source archive](source.zip) containing 1 file with their package structure preserved. See [SOURCE_INDEX.md](SOURCE_INDEX.md) for its contents. Reference components retain their labels and upstream notices.
-
-## Workflow
+## How it works
 
 ```mermaid
 flowchart LR
@@ -28,18 +24,8 @@ flowchart LR
     N0 --> N1 --> N2 --> N3 --> N4
 ```
 
-*Diagram reconstructed from the recovered source or project description.*
+## Running it
 
-## Explore / run
+Use the [main notebook](../../24_airline_sentiment_lstm.ipynb), which uses a three-class softmax output, sparse categorical cross-entropy and argmax prediction. [sentiment-lstm.ipynb](sentiment-lstm.ipynb) in this folder is an earlier version kept for comparison.
 
-Use the [reviewed notebook](../../24_airline_sentiment_lstm.ipynb) for the corrected three-class softmax, sparse categorical cross-entropy, and argmax prediction. The local `sentiment-lstm.ipynb` is an earlier historical variant retained for comparison. Supply the original Tweets.csv locally and update the notebook data path. Install the imported TensorFlow/Keras, pandas, and NumPy dependencies in a compatible environment.
-
-### Direct source files
-
-- [sentiment-lstm.ipynb](sentiment-lstm.ipynb)
-
-## Project status
-
-The original Tweets.csv is excluded because it contains user and location metadata. No fresh training or verified accuracy measurement is claimed.
-
-No training, benchmark, paid API request, or external service deployment was performed to prepare this showcase. Team names, student IDs, raw personal documents, and embedded credentials are excluded from the public upload copies. Additional scope notes are in [SOURCE_NOTES.md](SOURCE_NOTES.md).
+Download the Twitter US Airline Sentiment dataset (Tweets.csv), set its path in the notebook, and install TensorFlow/Keras, pandas and NumPy. The dataset isn't stored here because it contains user and location details.
